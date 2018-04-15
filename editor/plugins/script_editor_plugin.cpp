@@ -1640,8 +1640,8 @@ void ScriptEditor::_update_script_names() {
 				new_cur_tab = i;
 			}
 		}
-		tab_container->call_deferred("set_current_tab", new_prev_tab);
-		tab_container->call_deferred("set_current_tab", new_cur_tab);
+		tab_container->set_current_tab(new_prev_tab);
+		tab_container->set_current_tab(new_cur_tab);
 		_sort_list_on_update = false;
 	}
 
